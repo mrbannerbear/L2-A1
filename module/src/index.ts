@@ -1,9 +1,7 @@
-// Problem-1:
 function formatString(input: string, toUpper?: boolean): string {
   return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
-// Problem-2:
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -11,7 +9,6 @@ function filterByRating(
   return filteredItems;
 }
 
-// Problem-3:
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   const result: T[] = [];
   for (const array of arrays) {
@@ -20,7 +17,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
   return result;
 }
 
-// Problem-4:
 class Vehicle {
   constructor(private _make: string, public year: number) {}
   getInfo() {
@@ -43,12 +39,10 @@ class Car extends Vehicle {
   }
 }
 
-// Problem-5:
 function processValue(value: string | number): number {
   return typeof value === "string" ? value.length : value * 2;
 }
 
-// Problem-6:
 interface Product {
   name: string;
   price: number;
@@ -62,7 +56,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   return highestPricedProduct;
 }
 
-// Problem- : 7
 enum Day {
   Monday,
   Tuesday,
@@ -80,7 +73,6 @@ function getDayType(day: Day): string {
   return "Weekday";
 }
 
-// Problem-8:
 async function squareAsync(n: number): Promise<number> {
   if (n < 0) {
     throw new Error("Negative number not allowed");
